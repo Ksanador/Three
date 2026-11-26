@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>AddEditCoffeeForm</class>
+ <widget class="QDialog" name="AddEditCoffeeForm">
+  <property name="geometry">
+   <rect><x>0</x><y>0</y><width>450</width><height>420</height></rect>
+  </property>
+  <property name="windowTitle">
+   <string>Добавление / редактирование кофе</string>
+  </property>
+  <layout class="QVBoxLayout" name="verticalLayout">
+   <item>
+    <layout class="QFormLayout" name="formLayout">
+     <item row="0" column="0"><widget class="QLabel" name="nameLabel"><property name="text"><string>Название сорта:</string></property></widget></item>
+     <item row="0" column="1"><widget class="QLineEdit" name="nameEdit"/></item>
+
+     <item row="1" column="0"><widget class="QLabel" name="roastLabel"><property name="text"><string>Степень обжарки:</string></property></widget></item>
+     <item row="1" column="1">
+      <widget class="QComboBox" name="roastCombo">
+       <item><property name="text"><string>Светлая</string></property></item>
+       <item><property name="text"><string>Средняя</string></property></item>
+       <item><property name="text"><string>Темная</string></property></item>
+      </widget>
+     </item>
+
+     <item row="2" column="0"><widget class="QLabel" name="groundLabel"><property name="text"><string>Молотый/В зернах:</string></property></widget></item>
+     <item row="2" column="1">
+      <widget class="QComboBox" name="groundCombo">
+       <item><property name="text"><string>В зернах</string></property></item>
+       <item><property name="text"><string>Молотый</string></property></item>
+      </widget>
+     </item>
+
+     <item row="3" column="0"><widget class="QLabel" name="descLabel"><property name="text"><string>Описание вкуса:</string></property></widget></item>
+     <item row="3" column="1"><widget class="QPlainTextEdit" name="descEdit"/></item>
+
+     <item row="4" column="0"><widget class="QLabel" name="priceLabel"><property name="text"><string>Цена:</string></property></widget></item>
+     <item row="4" column="1"><widget class="QDoubleSpinBox" name="priceSpin">
+      <property name="maximum"><double>100000.0</double></property>
+      <property name="decimals"><number>2</number></property>
+     </widget></item>
+
+     <item row="5" column="0"><widget class="QLabel" name="volumeLabel"><property name="text"><string>Объем упаковки:</string></property></widget></item>
+     <item row="5" column="1"><widget class="QSpinBox" name="volumeSpin">
+      <property name="maximum"><number>100000</number></property>
+      <property name="singleStep"><number>50</number></property>
+     </widget></item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QHBoxLayout" name="buttonsLayout">
+     <item><spacer name="spacer"><property name="orientation"><enum>Qt::Horizontal</enum></property><property name="sizeHint" stdset="0"><size><width>40</width><height>20</height></size></property></spacer></item>
+     <item><widget class="QPushButton" name="saveButton"><property name="text"><string>Сохранить</string></property></widget></item>
+     <item><widget class="QPushButton" name="cancelButton"><property name="text"><string>Отмена</string></property></widget></item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
